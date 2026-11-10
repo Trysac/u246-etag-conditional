@@ -9,4 +9,5 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Added
 
+- Added ETag generation, parsing, precondition evaluation, and HTTP date utilities per RFC 9110.
 - Initial project structure from the factory utility template.
