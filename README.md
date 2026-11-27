@@ -1,7 +1,6 @@
 # etag-conditional
 
-[![npm version](https://img.shields.io/npm/v/@trysac/etag-conditional.svg)](https://www.npmjs.com/package/@trysac/etag-conditional)
-[![license: MIT](https://img.shields.io/npm/l/@trysac/etag-conditional.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![CI](https://github.com/Trysac/u246-etag-conditional/actions/workflows/ci.yml/badge.svg)](https://github.com/Trysac/u246-etag-conditional/actions/workflows/ci.yml)
 
 ETags and conditional requests for TypeScript APIs per RFC 9110: strong and weak comparison, If-Match, If-None-Match and date preconditions in the standard order, with 304 and 412 results
@@ -12,9 +11,15 @@ APIs that return ETags but evaluate conditional headers by string equality get t
 
 ## Install
 
+Not published to npm yet. Build it from a clone, then install it from the local path:
+
 ```sh
-npm install @trysac/etag-conditional
+git clone https://github.com/Trysac/u246-etag-conditional.git
+cd u246-etag-conditional && npm ci && npm run build
+cd ../your-project && npm install ../u246-etag-conditional
 ```
+
+Imports keep the package name: `import { ... } from "@trysac/etag-conditional"`.
 
 Requires Node.js 20 or newer. The package ships ES modules with TypeScript declarations and has no runtime dependencies.
 
